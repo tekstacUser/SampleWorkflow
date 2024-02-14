@@ -1,0 +1,11 @@
+name: Sample Workflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print-welcome-message
+        run: echo "Hello, GitHub Actions!"
